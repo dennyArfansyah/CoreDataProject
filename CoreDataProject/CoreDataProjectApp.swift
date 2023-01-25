@@ -13,7 +13,7 @@ struct CoreDataProjectApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ObjectUniqueView()
+            OneToManyRelationshipView()
                 .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
