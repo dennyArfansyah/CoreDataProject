@@ -11,6 +11,13 @@
 		37E7318F29818C000080289F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7318E29818C000080289F /* ContentView.swift */; };
 		37E7319129818C020080289F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E7319029818C020080289F /* Assets.xcassets */; };
 		37E7319429818C020080289F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E7319329818C020080289F /* Preview Assets.xcassets */; };
+		37E7319D29818C7B0080289F /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37E7319B29818C7B0080289F /* CoreDataProject.xcdatamodeld */; };
+		37E7319F29818CAB0080289F /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7319E29818CAB0080289F /* DataController.swift */; };
+		37E731A22981905B0080289F /* HashableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E731A12981905B0080289F /* HashableView.swift */; };
+		37E731A52981917C0080289F /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E731A32981917C0080289F /* Movie+CoreDataClass.swift */; };
+		37E731A62981917C0080289F /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E731A42981917C0080289F /* Movie+CoreDataProperties.swift */; };
+		37E731A8298194B00080289F /* MOCChangesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E731A7298194B00080289F /* MOCChangesView.swift */; };
+		37E731AA298196560080289F /* ObjectUniqueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E731A9298196560080289F /* ObjectUniqueView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		37E7318E29818C000080289F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		37E7319029818C020080289F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37E7319329818C020080289F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		37E7319C29818C7B0080289F /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
+		37E7319E29818CAB0080289F /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		37E731A12981905B0080289F /* HashableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableView.swift; sourceTree = "<group>"; };
+		37E731A32981917C0080289F /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
+		37E731A42981917C0080289F /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		37E731A7298194B00080289F /* MOCChangesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOCChangesView.swift; sourceTree = "<group>"; };
+		37E731A9298196560080289F /* ObjectUniqueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectUniqueView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +49,8 @@
 		37E7318029818C000080289F = {
 			isa = PBXGroup;
 			children = (
+				37E731A32981917C0080289F /* Movie+CoreDataClass.swift */,
+				37E731A42981917C0080289F /* Movie+CoreDataProperties.swift */,
 				37E7318B29818C000080289F /* CoreDataProject */,
 				37E7318A29818C000080289F /* Products */,
 			);
@@ -51,10 +67,13 @@
 		37E7318B29818C000080289F /* CoreDataProject */ = {
 			isa = PBXGroup;
 			children = (
+				37E731A0298190380080289F /* Part1 */,
+				37E7319A29818C670080289F /* Model */,
 				37E7318C29818C000080289F /* CoreDataProjectApp.swift */,
 				37E7318E29818C000080289F /* ContentView.swift */,
 				37E7319029818C020080289F /* Assets.xcassets */,
 				37E7319229818C020080289F /* Preview Content */,
+				37E7319E29818CAB0080289F /* DataController.swift */,
 			);
 			path = CoreDataProject;
 			sourceTree = "<group>";
@@ -65,6 +84,24 @@
 				37E7319329818C020080289F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		37E7319A29818C670080289F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				37E7319B29818C7B0080289F /* CoreDataProject.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		37E731A0298190380080289F /* Part1 */ = {
+			isa = PBXGroup;
+			children = (
+				37E731A12981905B0080289F /* HashableView.swift */,
+				37E731A7298194B00080289F /* MOCChangesView.swift */,
+				37E731A9298196560080289F /* ObjectUniqueView.swift */,
+			);
+			path = Part1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +175,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				37E7318F29818C000080289F /* ContentView.swift in Sources */,
+				37E7319F29818CAB0080289F /* DataController.swift in Sources */,
+				37E731A8298194B00080289F /* MOCChangesView.swift in Sources */,
+				37E731A22981905B0080289F /* HashableView.swift in Sources */,
 				37E7318D29818C000080289F /* CoreDataProjectApp.swift in Sources */,
+				37E731AA298196560080289F /* ObjectUniqueView.swift in Sources */,
+				37E731A52981917C0080289F /* Movie+CoreDataClass.swift in Sources */,
+				37E731A62981917C0080289F /* Movie+CoreDataProperties.swift in Sources */,
+				37E7319D29818C7B0080289F /* CoreDataProject.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +383,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		37E7319B29818C7B0080289F /* CoreDataProject.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				37E7319C29818C7B0080289F /* CoreDataProject.xcdatamodel */,
+			);
+			currentVersion = 37E7319C29818C7B0080289F /* CoreDataProject.xcdatamodel */;
+			path = CoreDataProject.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 37E7318129818C000080289F /* Project object */;
 }
